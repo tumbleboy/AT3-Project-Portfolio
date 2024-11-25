@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jarred Osborne | Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/site.css"/>
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body class="min-h-screen flex flex-col bg-blue-50">
+<header class="bg-white">
+    <!--    Nav bar wrapper-->
+    <div class="sticky top-0 flex flex-col justify-between p-6 mx-auto md:flex-row gap-2">
+        <!--        Logo and page heading-->
+        <a class="flex items-center mb-4 title-font md:mb-0 gap-2">
+            <img src="https://placehold.co/64?text=logo" alt="Logo">
+            <h1 class="text-3xl">Jarred Osborne Portfolio</h1>
+        </a>
+        <!--        Nav bar links-->
+        <nav class="hidden md:flex pl-6 text-base border-l border-gray-400 flex-col md:flex-row
+                md:ml-auto gap-4">
+            <a href="."
+               class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-400 ease-in-out text-2xl">Home</a>
+            <a href="contact.html"
+               class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-400 ease-in-out text-2xl">Contact</a>
+            <a href="about.html"
+               class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-400 ease-in-out text-2xl">About</a>
+            <a href="resume.html"
+               class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-400 ease-in-out text-2xl">Resume</a>
+            <a href="projects.html"
+               class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-400 ease-in-out text-2xl">Projects</a>
+            <a href="myworks.html"
+               class="border-b border-gray-400 hover:border-gray-200 hover:text-white
+                  transition duration-400 ease-in-out text-2xl">Sample Project</a>
+        </nav>
+    </div>
+</header>
+<main class="flex flex-col w-4/5 mx-auto pb-8 pt-3 flex-grow bg-white">
+    <!--    section that contains the center elements of the page-->
+    <article class="flex flex-col px-4 gap-2 flex-grow">
+        <!--        Style header-->
+        <header class="m-4 border-b pb-2 border-blue-300">
+            <h2 class="text-5xl font-bold text-gray-500">Welcome to my site.</h2>
+            <br><p>Professional musician, aspiring developer. Developed using HTML, CSS and Tailwind.</p>
+        </header>
+<!--        API section-->
+        <section class="m-4 flex flex-col md:flex-row md:justify-evenly">
+            <header class="flex justify-center mb-4">
+                <h3 class="text-2xl font-bold text-gray-700">Ninja API App</h3><br>
+            </header>
+<!--            Password API-->
+            <section class="flex flex-col mb-10">
+                <h4 class="flex justify-center mb-3 text-xl">Generate a random Password</h4>
+                <!--                        User input field-->
+                <div class="mb-1">
+                    <p id="api-passwordlength-label">Enter length of Password</p>
+                    <label>
+                        <input id="password-length" type="text" class="border-b border-blue-300">
+                    </label>
+                </div>
+                <div>
+                    <!--                            API call button-->
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            id="fetch-password-button">Get Result</button>
+                </div>
+                <p id="api-password-result" class="overflow-auto border border-gray-300 p-2 bg-gray-100 break-words w-full whitespace-normal">
+                    Result displayed here
+                </p>
+            </section>
+
+<!--            Quote API-->
+            <section class="flex flex-col mb-10">
+                <h4 class="flex justify-center mb-3 text-xl">Generate a random Quote</h4>
+                <!--                        User input field-->
+                <div class="mb-1">
+                    <p id="api-quotecategory-label">Enter category of quote</p>
+                    <label>
+                        <input id="quote-category" type="text" class="border-b border-blue-300">
+                    </label>
+                </div>
+                <div>
+                    <!--                            API call button-->
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            id="fetch-quote-button">Get Result</button>
+                </div>
+                <p id="api-quote-result" class="overflow-auto border border-gray-300 p-2 bg-gray-100 break-words w-full">
+                    Result displayed here
+                </p>
+            </section>
+
+<!--            Facts API-->
+            <section class="flex flex-col mb-10">
+                <h4 class="flex justify-center mb-3 text-xl">Generate a random Fact</h4>
+                <!--                        User input field-->
+                <div class="mb-1">
+                </div>
+                <div>
+                    <!--                            API call button-->
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            id="fetch-facts-button">Get Result</button>
+                </div>
+                <p id="api-facts-result" class="border border-gray-300 p-2 bg-gray-100 break-words w-full whitespace-normal">
+                    Result displayed here
+                </p>
+            </section>
+        </section>
+    </article>
+</main>
+<footer class="bg-white body-font w-full container flex flex-col items-center justify-between
+p-6 mx-auto md:flex-row gap-2">
+    <section>
+        <img src="https://placehold.co/64?text=logo" alt="Logo">
+        <p>© Copyright 2023 Jarred Osborne. All rights reserved.</p>
+    </section>
+    <section>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="myworks.html">Sample Project</a></li>
+
+        </ul>
+    </section>
+</footer>
+</body>
+</html>
